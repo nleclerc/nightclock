@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="fr.spirotron.nightclock" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>NightClock</name>
+    <description>
+        Displays the time in the dark.
+    </description>
+    <author email="nl@spirotron.fr" href="http://spirotron.fr">
+        Nicolas Leclerc
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <icon height="36" src="res/icon/android/icon-36-ldpi.png" width="36" />
+    <icon height="48" src="res/icon/android/icon-48-mdpi.png" width="48" />
+    <icon height="72" src="res/icon/android/icon-72-hdpi.png" width="72" />
+    <icon height="96" src="res/icon/android/icon-96-xhdpi.png" width="96" />
+    <icon height="144" src="res/icon/android/icon-144-xxhdpi.png" width="144" />
+    <icon height="192" src="res/icon/android/icon-192-xxxhdpi.png" width="192" />
+    <engine name="android" spec="^6.2.3" />
+    <plugin name="cordova-plugin-fullscreen" spec="^1.2.0" />
+    <plugin name="cordova-plugin-insomnia" spec="^4.3.0" />
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
+</widget>

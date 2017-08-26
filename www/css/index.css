@@ -1,0 +1,71 @@
+
+* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	-webkit-touch-callout: none;				/* prevent callout to copy image, etc when tap to hold */
+	-webkit-text-size-adjust: none;			 /* prevent webkit from resizing text to fit */
+	-webkit-user-select: none;				  /* prevent copy paste, to allow, change 'none' to 'text' */
+
+	height: 100vh;
+
+	background-color: black;
+	color: #777;
+
+	overflow: hidden;
+
+	box-sizing: border-box;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.app {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.app.initialized {
+	display: flex;
+}
+
+.time {
+	font-family: arial;
+	font-size: 17em;
+	line-height: 85%;
+}
+
+.date {
+	font-size: 2em;
+	opacity: .5;
+}
+
+@media (orientation: landscape) {
+	.time > * {
+		display: inline;
+	}
+}
+
+@media (orientation: portrait) {
+	.time .separator {
+		transform: rotate(90deg);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		line-height: 10%;
+		margin-left: .15em;
+		margin-bottom: .05em;
+	}
+}
