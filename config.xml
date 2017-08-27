@@ -14,7 +14,6 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="BackgroundColor" value="#ff000000" />
     <content src="index.html" />
-    <access origin="*" />
     <icon height="36" src="res/icon/android/icon-36-ldpi.png" width="36" />
     <icon height="48" src="res/icon/android/icon-48-mdpi.png" width="48" />
     <icon height="72" src="res/icon/android/icon-72-hdpi.png" width="72" />
