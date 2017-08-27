@@ -7,6 +7,12 @@
     <author email="nl@spirotron.fr" href="http://spirotron.fr">
         Nicolas Leclerc
     </author>
+    <preference name="webviewbounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="KeepRunning" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="BackgroundColor" value="#ff000000" />
     <content src="index.html" />
     <access origin="*" />
     <icon height="36" src="res/icon/android/icon-36-ldpi.png" width="36" />
