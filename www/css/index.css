@@ -34,6 +34,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	font-family: arial;
 }
 
 .app.initialized {
@@ -41,7 +42,6 @@ body {
 }
 
 .time {
-	font-family: arial;
 	font-size: 17em;
 	line-height: 85%;
 }
