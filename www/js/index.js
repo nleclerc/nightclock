@@ -36,7 +36,7 @@ var app = {
 
 		app.hoursEl.text(currentDate.format('HH'));
 		app.minutesEl.text(currentDate.format('mm'));
-		app.dateEl.text(currentDate.format('LLLL').replace(/ .*$/,' ')+currentDate.format('LL').replace(/ [^ ]*$/,''));
+		app.dateEl.text(currentDate.format('LLLL').replace(/ .*$/,' ')+currentDate.format('LL').replace(/,? [^ ]*$/,''));
 	},
 
 	onDeviceReady: function() {
