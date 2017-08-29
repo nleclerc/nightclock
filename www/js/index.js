@@ -39,13 +39,18 @@ var app = {
 		app.dateEl.text(currentDate.format('LLLL').replace(/ .*$/,' ')+currentDate.format('LL').replace(/,? [^ ]*$/,''));
 	},
 
-	onDeviceReady: function() {
-		window.plugins.insomnia.keepAwake();
+	enableLeanMode: function() {
 		AndroidFullScreen.leanMode(function(){
 			console.log('Lean mode activated.');
 		}, function(err) {
 			console.error('Error setting lean mode:',err);
 		});
+	},
+
+	onDeviceReady: function() {
+		window.plugins.insomnia.keepAwake();
+		app.enableLeanMode();
+		window.addEventListener('resume',app.enableLeanMode);
 	}
 };
 
